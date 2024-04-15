@@ -1,0 +1,11 @@
+<ng-container *ngIf="product">
+
+    <h1>{{product.title}}</h1>
+    <p>{{product.price}}</p>
+    <img [src]="product.images[0]" alt="">
+</ng-container>
+
+<ng-container *ngIF ="!product">
+    product no renderizado
+</ng-container>
+
